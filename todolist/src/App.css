@@ -1,0 +1,95 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #e9ecef; /* Ljusgrå bakgrund */
+  color: #333; /* Mörk textfärg */
+  display: flex;
+  justify-content: center; /* Centrera horisontellt */
+  align-items: center; /* Centrera vertikalt */
+  height: 100vh; /* Full höjd av viewport */
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  background: white; /* Vit bakgrund för container */
+  border-radius: 10px; /* Rundade hörn */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Skugga */
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #4a90e2; /* Blå rubrikfärg */
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  width: calc(100% - 22px); /* Justera bredden för padding */
+  border: 2px solid #4a90e2; /* Blå kantlinje */
+  border-radius: 5px; /* Rundade hörn */
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff; /* Ljusare blå vid fokus */
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #4a90e2; /* Blå bakgrund */
+  color: white; /* Vit text */
+  border: none;
+  border-radius: 5px; /* Rundade hörn */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #007bff; /* Ljusare blå vid hover */
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between; /* Dela upp utrymmet */
+  align-items: center; /* Centra vertikalt */
+  padding: 10px;
+  margin: 10px 0; /* Marginal mellan uppgifter */
+  border: 1px solid #dcdcdc; /* Grå kantlinje */
+  border-radius: 5px; /* Rundade hörn */
+  background-color: #f9f9f9; /* Ljus bakgrund för uppgifter */
+}
+
+.todo-item span {
+  flex-grow: 1; /* Låt texten växa */
+}
+
+.buttons {
+  display: flex; /* För att kunna styra knapparna */
+  gap: 10px; /* Avstånd mellan knappar */
+}
+
+.button-done {
+  background-color: #28a745; /* Grön bakgrund */
+  color: white; /* Vit text */
+}
+
+.button-done:hover {
+  background-color: #218838; /* Mörkare grön vid hover */
+}
+
+.delete {
+  background-color: #dc3545; /* Röd bakgrund */
+  color: white; /* Vit text */
+}
+
+.delete:hover {
+  background-color: #c82333; /* Mörkare röd vid hover */
+}
